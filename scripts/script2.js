@@ -24,38 +24,45 @@
 
 
 
-//retornar no console apenas as imgs que começarem com 'assets'
-const animaisImg = document.querySelectorAll('#animais img[src^="./assets"]');
-console.log(animaisImg);
+// //retornar no console apenas as imgs que começarem com 'assets'
+// const animaisImg = document.querySelectorAll('#animais img[src^="./assets"]');
+// console.log(animaisImg);
 
-//selecione todos os links internos onde o href começa com #
-const linkIntCerquilha = document.querySelectorAll('.menu a[href^="#"]');
-console.log(linkIntCerquilha);
+// //selecione todos os links internos onde o href começa com #
+// const linkIntCerquilha = document.querySelectorAll('.menu a[href^="#"]');
+// console.log(linkIntCerquilha);
 
-//selecione o primeiro h2 dentro de .animais-descrição
-const h2Animais = document.querySelector('.animais-descricao h2');
-console.log(h2Animais.textContent);
+// //selecione o primeiro h2 dentro de .animais-descrição
+// const h2Animais = document.querySelector('.animais-descricao h2');
+// console.log(h2Animais.textContent);
 
-//selecione o ultimo p do site
-const lastP = document.querySelectorAll('p');
-console.log(lastP[lastP.length - 1]);
+// //selecione o ultimo p do site
+// const lastP = document.querySelectorAll('p');
+// console.log(lastP[lastP.length - 1]);
 
-const imgs = document.querySelectorAll('img');
-imgs.forEach((item, index, array) => {
-  console.log(item, index, array);
-});
-
+// const imgs = document.querySelectorAll('img');
+// imgs.forEach((item, index, array) => {
+//   console.log(item);
+// });
 
 //mostre no console cada paragrafo desse site 
-const allP = document.querySelectorAll('p');
-allP.forEach((item) => {
-  console.log(item);
-})
+// const allP = document.querySelectorAll('p');
+// allP.forEach((item) => {
+//   console.log(item);
+// })
 
-//mostre o texto dos p's no console
-const allPText = document.querySelectorAll('p');
-allPText.forEach((item) => {
-  console.log(item.innerText + 'xd');
+// //mostre o texto dos p's no console
+// const allPText = document.querySelectorAll('p');
+// allPText.forEach((item) => {
+//   console.log(item.innerText);
+// });
+
+const img = document.querySelector('img');
+img.setAttribute('alt', 'raposinhaxD');
+
+const itensMenu = document.querySelectorAll('.menu a');
+itensMenu.forEach((item) => {
+  item.classList.add('ativo');
 });
 
 
