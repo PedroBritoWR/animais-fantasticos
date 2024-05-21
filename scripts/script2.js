@@ -55,7 +55,7 @@ allP.forEach((item) => {
 //mostre o texto dos p's no console
 const allPText = document.querySelectorAll('p');
 allPText.forEach((item) => {
-  console.log(item.innerText);
+  console.log(item.innerText + 'xd');
 });
 
 
