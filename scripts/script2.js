@@ -91,11 +91,26 @@ links.forEach((link) => {
   }
 })
 
-
 const mobileBrowser = window.matchMedia('(max-width: 720px)').matches;
-console.log(mobileBrowser);
 const menu = document.getElementById('menu');
 mobileBrowser && menu.classList.add('menu-mobile');
+
+const tituloClicavel = document.querySelector('h1');
+tituloClicavel.addEventListener('click', () => {
+  console.log('evento de click ativado');
+});
+
+function handleKeyDown(event) {
+  if (event.key === 'f') {
+    document.body.classList.toggle('fullScreen');
+  } else {}
+}
+window.addEventListener('keydown', handleKeyDown);
+
+const copy = document.querySelector('.copy');
+const cloneMenu = menu.cloneNode(true);
+copy.appendChild(cloneMenu);
+
 
 
 

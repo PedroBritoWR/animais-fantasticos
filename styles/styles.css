@@ -100,6 +100,11 @@ body {
   grid-column: 2;
   margin-top: 40px;
   width: 250px;
+  cursor: all-scroll;
+}
+
+.animais-lista li{
+  cursor: pointer;
 }
 
 .animais-lista::-webkit-scrollbar{
@@ -128,8 +133,10 @@ body {
 
 
 .animais-descricao{
-  grid-column: 3;
+  grid-column: 2/4;
+  margin-left: 190px;
   margin-top: 15rem;
+  
 }
 
 .animais-descricao section{
@@ -139,7 +146,7 @@ body {
 #faq{
   display: flex;
   flex-direction: column;
-}
+}                           
 
 .faq-lista {
   grid-column: 2 / 4
@@ -210,6 +217,11 @@ body {
   font-weight: bold;
 }
 
+.fullScreen{
+  background-color: aqua;
+}
+
+
 @media (max-width: 700px) {
   body {
     grid-template-columns: 1fr;
@@ -242,5 +254,23 @@ body {
   }
 }
 
+.js-tabcontent section{
+  display: none;
+}
 
+.js-tabcontent section.ativo{
+  display: block !important;
+  animation: show .5s forwards;
+}
 
+@keyframes show {
+  from{
+    opacity: 0;
+    transform: matrix3d(30px, 0, 0)
+  }
+  to{
+    opacity: 1;
+    transform: matrix3d(0, 0, 0)
+  }
+
+}
