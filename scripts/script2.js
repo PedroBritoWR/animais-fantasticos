@@ -58,12 +58,50 @@
 // });
 
 const img = document.querySelector('img');
-img.setAttribute('alt', 'raposinhaxD');
+img.setAttribute('alt', 'img de raposa');
 
 const itensMenu = document.querySelectorAll('.menu a');
 itensMenu.forEach((item) => {
   item.classList.add('ativo');
 });
+
+const imgtlgd = document.querySelectorAll('#animais img');
+imgtlgd.forEach((item) => {
+});
+
+const firstImage = document.querySelector('#animais img');
+const primeiraImagem = firstImage.offsetTop;
+
+
+const allImgs = document.querySelectorAll('img');
+let totalWidth = 0;
+allImgs.forEach((img) => {
+  totalWidth += img.offsetWidth;
+});
+console.log(totalWidth);
+
+const links = document.querySelectorAll('a')
+links.forEach((link) => {
+  const linkWidth = link.offsetWidth;
+  const linkHeith = link.offsetHeight;
+  if (linkWidth > 44 && linkHeith > 44) {
+    console.log('Possui Boa acessibilidade!');
+  } else {
+    console.log('Não possui boa acessibilidade!');
+  }
+})
+
+
+const mobileBrowser = window.matchMedia('(max-width: 720px)').matches;
+console.log(mobileBrowser);
+const menu = document.getElementById('menu');
+mobileBrowser && menu.classList.add('menu-mobile');
+
+
+
+
+
+
 
 
 
