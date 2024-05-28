@@ -175,6 +175,11 @@ body {
   margin-left: 30px;
 }
 
+.text-destaque{
+  color: #F54;
+  font-weight: bold;
+}
+
 .mapa {
   grid-column: 2;
 }
@@ -254,7 +259,7 @@ body {
   }
 }
 
-.js-tabcontent section{
+.js  .js-tabcontent section{
   display: none;
 }
 
@@ -274,3 +279,67 @@ body {
   }
 
 }
+
+.js-accordion dd {
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+
+.js-accordion dt::after {
+  content: '⬎';
+  margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after {
+  content: '⬏';
+}
+
+.js-accordion dd.ativo {
+  display: block;
+  max-height: 200px; 
+  animation: slideDown 1.2s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 800px;
+    opacity: 1;
+  }
+}
+
+
+
+/* .js .js-accordion dd{
+  display: none;
+}
+
+.js-accordion dt::after{
+  content: '⬎';
+  margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after{
+  content: '⬏';
+  animation: slideDown .5s forwards;
+}
+
+.js-accordion dd.ativo{
+  display: block;
+}
+diferenças
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+} */
