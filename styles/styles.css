@@ -66,7 +66,7 @@ body {
   font-size: 6rem;
   line-height: 1;
   font-weight: 400;
-  margin-bottom: 1rem;
+  
 }
 
 .animais h2{
@@ -235,9 +235,10 @@ body {
     grid-column: 1;
   }
   .grid-section {
-    grid-template-columns: 100px 1fr;
-    grid-gap: 10px;
-  }
+    grid-template-columns:50px 1fr;
+    grid-gap: 60px;
+    margin-bottom: 200px;
+  } 
   .animais-lista {
     grid-column: 1;
   }
@@ -254,7 +255,7 @@ body {
     margin-bottom: 0px;
   }
   .animais-descricao{
-    margin-top: 850px;
+    margin-top: 120px;
     margin-right: 60px;
   }
 }
