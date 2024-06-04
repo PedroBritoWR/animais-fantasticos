@@ -57,7 +57,7 @@ body {
   padding: 10px;
   display: grid;
   grid-template-columns: 90px 300px 1fr;
-  grid-gap: 20px;
+  grid-gap: 40px;
   margin-bottom: 4rem
 }
 
@@ -99,7 +99,7 @@ body {
   overflow-y: scroll;
   grid-column: 2;
   margin-top: 40px;
-  width: 250px;
+  width: 290px;
   cursor: all-scroll;
 }
 
@@ -108,7 +108,7 @@ body {
 }
 
 .animais-lista::-webkit-scrollbar{
-  width: 18px;
+  width: 40px;
 }
 
 .animais-lista::-webkit-scrollbar-thumb{
@@ -314,33 +314,19 @@ body {
   }
 }
 
-
-
-/* .js .js-accordion dd{
-  display: none;
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
 }
 
-.js-accordion dt::after{
-  content: '⬎';
-  margin-left: 10px;
+.js .js-scroll.ativo {
+  opacity: 1;
+
+  transform: translate3d(0, 0, 0);
 }
 
-.js-accordion dt.ativo::after{
-  content: '⬏';
-  animation: slideDown .5s forwards;
-}
 
-.js-accordion dd.ativo{
-  display: block;
-}
-diferenças
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    max-height: 0;
-  }
-  to {
-    max-height: 200px;
-    opacity: 1;
-  }
-} */
+
+
+
